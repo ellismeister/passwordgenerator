@@ -7,7 +7,9 @@ const savePassword = (password) => {
   fs.open(path.join(__dirname, '../', 'passwords.txt'), 'a', 0o666, (e, id) => {
     fs.write(id, password + os.EOL, null, 'utf-8', () => {
       fs.close(id, () => {
-        console.log(chalk.green('Password has been saved to passwords.txt'));
+        console.log(
+          chalk.green.bold('Password has been saved to passwords.txt')
+        );
       });
     });
   });
