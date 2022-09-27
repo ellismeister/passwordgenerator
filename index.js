@@ -1,4 +1,4 @@
-// @ts-nocheck
+#!/usr/bin/env node
 const program = require('commander');
 const chalk = require('chalk');
 const clipboardy = require('clipboardy');
@@ -31,7 +31,7 @@ clipboardy.writeSync(generatedPassword);
 // Output Generated Password
 log(
   chalk.hex('#0542fa').bold('Generated Password: ') +
-    chalk.hex('#fa2a05').bold(generatedPassword)
+    chalk.hex('#00ff66').bold(generatedPassword)
 );
 
 log(chalk.yellow('Password copied to clipboard'));
