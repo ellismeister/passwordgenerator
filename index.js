@@ -6,7 +6,9 @@ const log = console.log;
 const createPassword = require('./utils/createPassword');
 const savePassword = require('./utils/savePassword');
 
-program.version('1.0.0').description('CLI Password Generator');
+program
+  .version('1.0.0')
+  .description('CLI Password Generator (Built by Ellis Meister)');
 
 program
   .option('-l, --length <number>', 'length of password', '8')
@@ -30,7 +32,7 @@ clipboardy.writeSync(generatedPassword);
 
 // Output Generated Password
 log(
-  chalk.hex('#0542fa').bold('Generated Password: ') +
+  chalk.hex('#0091ff').bold('Generated Password: ') +
     chalk.hex('#00ff66').bold(generatedPassword)
 );
 
