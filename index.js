@@ -8,7 +8,7 @@ const savePassword = require('./utils/savePassword');
 
 program
   .version('1.0.0')
-  .description('CLI Password Generator (Built by Ellis Meister)');
+  .description('CLI Password Generator (Built by Gaston Meister)');
 
 program
   .option('-l, --length <number>', 'length of password', '8')
